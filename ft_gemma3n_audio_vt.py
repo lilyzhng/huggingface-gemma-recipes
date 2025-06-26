@@ -112,8 +112,8 @@ def run_inference(val_dataset, processor, model, fname):
 
 
 def main():
-    model_id = "gg-hf-gm/gemma-3n-E2B-it"
-    processor = AutoProcessor.from_pretrained(model_id)
+    model_id = "google/gemma-3n-E2B-it"
+    processor = Gemma3nProcessor.from_pretrained(model_id)
 
     # Load and split the dataset.
     ds_full = load_dataset("AdrienB134/Emilia-dataset-french-split", split="fr")

@@ -120,8 +120,8 @@ def run_inference(val_dataset, processor, model, fname):
 
 
 def main():
-    model_id = "gg-hf-gm/gemma-3n-E2B-it"
-    processor = AutoProcessor.from_pretrained(model_id)
+    model_id = "google/gemma-3n-E2B-it"
+    processor = Gemma3nProcessor.from_pretrained(model_id)
 
     # load the dataset
     dataset_id = "ariG23498/intersection-dataset"

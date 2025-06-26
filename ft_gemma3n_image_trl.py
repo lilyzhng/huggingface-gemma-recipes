@@ -6,7 +6,7 @@ accelerate launch \
     --config_file examples/accelerate_configs/deepspeed_zero3.yaml \
     sft_vlm_gemma3n.py \
     --dataset_name ariG23498/intersection-dataset \
-    --model_name_or_path gg-hf-gm/gemma-3n-E2B-it \
+    --model_name_or_path google/gemma-3n-E2B-it \
     --per_device_train_batch_size 1 \
     --gradient_accumulation_steps 1 \
     --output_dir gemma-3n-E2B-it-trl-sft-intersection \
