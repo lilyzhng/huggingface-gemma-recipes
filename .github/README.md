@@ -108,4 +108,9 @@ We include a series of notebook+scripts for fine tuning the models.
 * [Fine tuning Gemma 3n on audio](/scripts/ft_gemma3n_audio_vt.py)
 * [Fine tuning Gemma 3n on images using TRL](/scripts/ft_gemma3n_image_trl.py)
 
+Before fine-tuning the model, ensure all dependencies are installed:
+
+```bash
+$ pip install -U -q -r requirements.txt
+```
 
