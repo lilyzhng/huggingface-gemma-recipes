@@ -103,7 +103,8 @@ model_generation(model, messages)
 
 We include a series of notebook+scripts for fine tuning the models.
 
-* [Fine tuning Gemma 3n on T4](/notebooks/fine_tune_gemma3n_on_t4.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/fine_tune_gemma3n_on_t4.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+* [Fine tuning Gemma 3n on free Colab T4 (notebook)](/notebooks/fine_tune_gemma3n_on_t4.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/fine_tune_gemma3n_on_t4.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+* [Fine tuning Gemma 3n on audio (notebook)](/notebooks/fine_tune_gemma3n_on_audio.ipynb)
 * [Fine tuning Gemma 3n on images](/scripts/ft_gemma3n_image_vt.py)
 * [Fine tuning Gemma 3n on audio](/scripts/ft_gemma3n_audio_vt.py)
 * [Fine tuning Gemma 3n on images using TRL](/scripts/ft_gemma3n_image_trl.py)
