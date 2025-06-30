@@ -10,14 +10,44 @@
 
 ## Getting Started
 
-The easiest way to quickly run a Gemma 💎 model on your machine would be with the
-🤗 `transformers` repository. Make sure you have the latest release installed.
+To quickly run a Gemma 💎 model on your machine, install the latest version of `timm` (for the vision encoder) and 🤗 `transformers` to run inference, or if you want to fine tune it.
 
 ```shell
 $ pip install -U -q transformers timm
 ```
 
-Once we've installed the dependencies, we can use the model creating a common function `model_generation`:
+### Inference with pipeline
+
+The easiest way to start using Gemma 3n is by using the pipeline abstraction in transformers:
+
+```python
+import torch
+from transformers import pipeline
+
+pipe = pipeline(
+   "image-text-to-text",
+   model="google/gemma-3n-E4B-it", # "google/gemma-3n-E4B-it"
+   device="cuda",
+   torch_dtype=torch.bfloat16
+)
+
+messages = [
+   {
+       "role": "user",
+       "content": [
+           {"type": "image", "url": "https://huggingface.co/datasets/ariG23498/demo-data/resolve/main/airplane.jpg"},
+           {"type": "text", "text": "Describe this image"}
+       ]
+   }
+]
+
+output = pipe(text=messages, max_new_tokens=32)
+print(output[0]["generated_text"][-1]["content"])
+```
+
+### Detailed inference with transformers
+
+Initialize the model and the processor from the Hub, and write the `model_generation` function that takes care of processing the prompts and running the inference on the model.
 
 ```python
 from transformers import AutoProcessor, AutoModelForImageTextToText
@@ -49,7 +79,7 @@ def model_generation(model, messages):
 
 And then using calling it with our specific modality:
 
-**Text only**
+#### Text only
 
 ```python
 # Text Only
@@ -65,7 +95,7 @@ messages = [
 model_generation(model, messages)
 ```
 
-**Interleaved with Audio**
+#### Interleaved with Audio
 
 ```python
 # Interleaved with Audio
@@ -82,7 +112,7 @@ messages = [
 model_generation(model, messages)
 ```
 
-**Interleaved with Image/Video**
+#### Interleaved with Image/Video
 
 ```python
 # Interleaved with Image
@@ -114,4 +144,6 @@ Before fine-tuning the model, ensure all dependencies are installed:
 ```bash
 $ pip install -U -q -r requirements.txt
 ```
+
+✨ **Bonus:** We've also started experimenting with adding **object detection** 🔍 capabilities to Gemma 3. You can explore that work in [this dedicated repo](https://github.com/ariG23498/gemma3-object-detection).
 
