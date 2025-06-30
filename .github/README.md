@@ -145,5 +145,5 @@ Before fine-tuning the model, ensure all dependencies are installed:
 $ pip install -U -q -r requirements.txt
 ```
 
-✨ **Bonus:** We've also started experimenting with adding **object detection** 🔍 capabilities to Gemma 3. You can explore that work in [this dedicated repo](https://github.com/ariG23498/gemma3-object-detection).
+✨ **Bonus:** We've also experimented with adding **object detection** 🔍 capabilities to Gemma 3. You can explore that work in [this dedicated repo](https://github.com/ariG23498/gemma3-object-detection).
 
