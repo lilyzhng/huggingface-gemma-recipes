@@ -7,7 +7,7 @@ Thank you for your time and happy coding!
 ## 🚀 How to Contribute
 
 1. **Open an issue to discuss your idea**  
-   - Head over to the [Issues](#) tab and click on "New issue" to create one. Describe your contribution in detail so maintainers and the community can provide early feedback and help you shape your proposal.
+   - Head over to the [Issues](https://github.com/huggingface/huggingface-gemma-recipes/issues) tab and click on "New issue" to create one. Describe your contribution in detail so maintainers and the community can provide early feedback and help you shape your proposal.
 
    ![New issue button](../assets/new_issue.png)
 
