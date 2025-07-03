@@ -135,15 +135,25 @@ model_generation(model, messages)
 
 We include a series of notebook+scripts for fine tuning the models.
 
-* [Fine tuning Gemma 3n 2B on free Colab T4 (notebook)](/notebooks/fine_tune_gemma3n_on_t4.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/fine_tune_gemma3n_on_t4.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
-* [Fine tuning Gemma 3n 4B on free Colab T4 with Unsloth (notebook)](/notebooks/Gemma3N_(4B)-Conversational.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/Gemma3N_(4B)-Conversational.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
-* [Fine tuning Gemma 3n on audio (notebook)](/notebooks/fine_tune_gemma3n_on_audio.ipynb)
-* [Fine tuning Gemma 3n on images](/scripts/ft_gemma3n_image_vt.py)
-* [Fine tuning Gemma 3n on audio](/scripts/ft_gemma3n_audio_vt.py)
+### Gemma 3n
+
+#### Notebooks
+
+* [Fine tuning Gemma 3n 2B on free Colab T4](/notebooks/fine_tune_gemma3n_on_t4.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/fine_tune_gemma3n_on_t4.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+* [Fine tuning Gemma 3n 4B with Unsloth on free Colab T4](/notebooks/Gemma3N_(4B)-Conversational.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/Gemma3N_(4B)-Conversational.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+* [Fine tuning Gemma 3n on audio](/notebooks/fine_tune_gemma3n_on_audio.ipynb)
 * [Fine tuning Gemma 3n on images using TRL](/scripts/ft_gemma3n_image_trl.py)
-* [Reinforement Learning (GRPO) on Gemma 3 with Unsloth and TRL (notebook)](/notebooks/Gemma3_(1B)-GRPO.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/Gemma3_(1B)-GRPO.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
-* [Vision fine tuning Gemma 4B with Unsloth (notebook)](/notebooks/Gemma3_(4B)-Vision.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/Gemma3_(4B)-Vision.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
-* [Conversational fine tuning Gemma 4B with Unsloth (notebook)](/notebooks/Gemma3_(4B).ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/Gemma3_(4B).ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
+#### Scripts
+
+* [Fine tuning Gemma 3n on images (script)](/scripts/ft_gemma3n_image_vt.py)
+* [Fine tuning Gemma 3n on audio (script)](/scripts/ft_gemma3n_audio_vt.py)
+
+### Gemma 3
+  
+* [Reinforement Learning (GRPO) on Gemma 3 with Unsloth and TRL](/notebooks/Gemma3_(1B)-GRPO.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/Gemma3_(1B)-GRPO.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+* [Vision fine tuning Gemma 3 4B with Unsloth](/notebooks/Gemma3_(4B)-Vision.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/Gemma3_(4B)-Vision.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+* [Conversational fine tuning Gemma 3 4B with Unsloth](/notebooks/Gemma3_(4B).ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/Gemma3_(4B).ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 Before fine-tuning the model, ensure all dependencies are installed:
 
