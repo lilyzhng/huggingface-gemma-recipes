@@ -143,6 +143,7 @@ We include a series of notebook+scripts for fine tuning the models.
 * [Fine tuning Gemma 3n 4B with Unsloth on free Colab T4](/notebooks/Gemma3N_(4B)-Conversational.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/Gemma3N_(4B)-Conversational.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 * [Fine tuning Gemma 3n on audio](/notebooks/fine_tune_gemma3n_on_audio.ipynb)
 * [Fine tuning Gemma 3n on images using TRL](/scripts/ft_gemma3n_image_trl.py)
+* [Fine tuning Gemma 3n on GUI Grounding](/notebooks/Gemma_3n_GUI_Finetune.ipynb)
 
 #### Scripts
 
