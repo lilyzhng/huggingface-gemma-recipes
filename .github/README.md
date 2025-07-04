@@ -8,6 +8,8 @@
 > Fine tune Gemma 3n 2B on a Free Colab Notebook: <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/fine_tune_gemma3n_on_t4.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 >
 > Fine tune Gemma 3n 4B on a Free Colab Notebook: <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/Gemma3N_(4B)-Conversational.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+>
+> Multimodal inference using Gemma 3n via pipeline <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/gemma3n_inference_via_pipeline.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 
 ## Getting Started
