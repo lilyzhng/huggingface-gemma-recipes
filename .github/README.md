@@ -131,7 +131,15 @@ messages = [
 model_generation(model, messages)
 ```
 
-## Model Fine Tuning
+## Inference
+
+### Gemma 3n
+
+#### Notebooks
+
+* [Multimodal inference using Gemma 3n via pipeline](/notebooks/gemma3n_inference_via_pipeline.ipynb) <a href="https://colab.research.google.com/github/huggingface/huggingface-gemma-recipes/blob/main/notebooks/gemma3n_inference_via_pipeline.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
+## Fine Tuning
 
 We include a series of notebook+scripts for fine tuning the models.
 
