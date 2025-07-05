@@ -1,5 +1,73 @@
-torch
-transformers
-datasets
-timm
-matplotlib
+# Install PyTorch with CUDA first:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# Core ML Libraries (PyTorch installed separately)
+transformers>=4.53.1
+accelerate>=1.8.1
+datasets>=3.6.0
+
+# Fine-tuning and Optimization
+peft>=0.16.0
+trl>=0.19.0
+bitsandbytes>=0.46.1
+safetensors>=0.5.3
+
+# Unsloth for efficient training
+unsloth>=2025.6.12
+unsloth-zoo>=2025.6.8
+
+# vLLM for inference (with CUDA 12.x compatibility)
+vllm>=0.9.1
+
+# HuggingFace Hub integration
+huggingface-hub>=0.33.2
+
+# Data processing
+pandas>=2.3.0
+numpy>=2.2.6
+pyarrow>=20.0.0
+
+# Image processing
+pillow>=11.3.0
+opencv-python-headless>=4.11.0.86
+
+# Audio processing
+sentencepiece>=0.2.0
+
+# Quantization and model formats
+gguf>=0.17.1
+
+# Jupyter/Interactive computing
+ipykernel>=6.29.5
+ipython>=8.37.0
+ipywidgets>=8.1.7
+jupyterlab-widgets>=3.0.15
+
+# Utilities
+tqdm>=4.67.1
+pyyaml>=6.0.2
+requests>=2.32.4
+filelock>=3.18.0
+packaging>=25.0
+
+# Protobuf (specific version to avoid conflicts)
+protobuf==3.20.3
+
+# CUDA libraries (for GPU support)
+nvidia-cublas-cu12>=12.6.4.1
+nvidia-cuda-cupti-cu12>=12.6.80
+nvidia-cuda-nvrtc-cu12>=12.6.77
+nvidia-cuda-runtime-cu12>=12.6.77
+nvidia-cudnn-cu12>=9.5.1.17
+nvidia-cufft-cu12>=11.3.0.4
+nvidia-curand-cu12>=10.3.7.77
+nvidia-cusolver-cu12>=11.7.1.2
+nvidia-cusparse-cu12>=12.5.4.2
+nvidia-nccl-cu12>=2.26.2
+nvidia-nvjitlink-cu12>=12.6.85
+nvidia-nvtx-cu12>=12.6.77
+
+# Optional: For advanced features
+xformers>=0.0.30
+triton>=3.3.0
+einops>=0.8.1
