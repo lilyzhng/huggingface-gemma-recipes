@@ -33,6 +33,8 @@ with image.imports():
 class Chatterbox:
     @modal.enter()
     def load(self):
+        # ChatterboxTTS is using a 0.5B (500 million) parameter Llama backbone architecture
+        # Trained on 500,000 hours (0.5M hours) of cleaned audio data
         self.model = ChatterboxTTS.from_pretrained(device="cuda")
 
     @modal.fastapi_endpoint(docs=True, method="POST")
